@@ -1,0 +1,60 @@
+<h1>'Allo, 'Allo!</h1>
+
+<div ng-controller="MainCtrl">
+	<div>
+		<label for="nom">Nom :</label> <input type="text" id="nom" ng-model="user.name"/>
+	</div>
+	<div>
+		<label for="courriel">Courriel :</label> <input type="email"
+			id="courriel" ng-model="user.mail"/>
+	</div>
+
+	<div class="button">
+		<button type="submit" ng-click="submit(user)">Envoyer</button>
+	</div>
+	<table class="table table-bordered table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat = "pers in persons">
+        <td>{{pers.id}}</td>
+        <td>{{pers.name}}</td>
+        <td>{{pers.mail}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+<!-- <div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+ -->
